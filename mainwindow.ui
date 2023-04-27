@@ -172,13 +172,13 @@
     <property name="title">
      <string>Archivo</string>
     </property>
-    <addaction name="actionAbrir_2"/>
-    <addaction name="actionGuardar_3"/>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionGuardar"/>
    </widget>
    <addaction name="menuArchivo"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionAbrir_2">
+  <action name="actionAbrir">
    <property name="text">
     <string>Abrir</string>
    </property>
@@ -186,7 +186,7 @@
     <string>Ctrl+O</string>
    </property>
   </action>
-  <action name="actionGuardar_3">
+  <action name="actionGuardar">
    <property name="text">
     <string>Guardar</string>
    </property>
