@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>652</height>
+    <width>652</width>
+    <height>605</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,102 +15,126 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_2">
-    <item row="0" column="0">
-     <widget class="QGroupBox" name="groupBox">
-      <property name="title">
-       <string>Vuelo</string>
+    <item row="1" column="1">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
       </property>
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="1">
-        <widget class="QLineEdit" name="ID_LineEdit"/>
-       </item>
-       <item row="0" column="0">
-        <widget class="QLabel" name="ID_Label">
-         <property name="text">
-          <string>ID</string>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="0">
-        <widget class="QLabel" name="Destino_Label">
-         <property name="text">
-          <string>Destino</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QLineEdit" name="Origen_LineEdit"/>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="Origen_Label">
-         <property name="text">
-          <string>Origen</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="0">
-        <widget class="QLabel" name="Peso_Label">
-         <property name="text">
-          <string>Peso</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
-        <widget class="QSpinBox" name="Peso_SpinBox"/>
-       </item>
-       <item row="6" column="1">
-        <widget class="QLineEdit" name="Destino_LineEdit"/>
-       </item>
-       <item row="9" column="0" colspan="2">
-        <widget class="QPushButton" name="Agregar_Final_PushButton">
-         <property name="text">
-          <string>Agregar al Final</string>
-         </property>
-        </widget>
-       </item>
-       <item row="10" column="0" colspan="2">
-        <widget class="QPushButton" name="Agregar_Inicio_PushButton">
-         <property name="text">
-          <string>Agregar al Inicio</string>
-         </property>
-        </widget>
-       </item>
-       <item row="11" column="0" colspan="2">
-        <widget class="QPushButton" name="Mostrar_PushButton">
-         <property name="mouseTracking">
-          <bool>false</bool>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="text">
-          <string>Mostrar</string>
-         </property>
-         <property name="checkable">
-          <bool>false</bool>
-         </property>
-         <property name="autoRepeat">
-          <bool>false</bool>
-         </property>
-         <property name="autoExclusive">
-          <bool>false</bool>
-         </property>
-         <property name="autoDefault">
-          <bool>false</bool>
-         </property>
-         <property name="default">
-          <bool>false</bool>
-         </property>
-         <property name="flat">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-      </layout>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Agregar</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Vuelo</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="2" column="0">
+            <widget class="QLabel" name="Origen_Label">
+             <property name="text">
+              <string>Origen</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="Origen_LineEdit"/>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="ID_LineEdit"/>
+           </item>
+           <item row="9" column="0" colspan="2">
+            <widget class="QPushButton" name="Agregar_Final_PushButton">
+             <property name="text">
+              <string>Agregar al Final</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="0" colspan="2">
+            <widget class="QPushButton" name="Mostrar_PushButton">
+             <property name="mouseTracking">
+              <bool>false</bool>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>Mostrar</string>
+             </property>
+             <property name="checkable">
+              <bool>false</bool>
+             </property>
+             <property name="autoRepeat">
+              <bool>false</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+             <property name="default">
+              <bool>false</bool>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="Peso_Label">
+             <property name="text">
+              <string>Peso</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="0" colspan="2">
+            <widget class="QPushButton" name="Agregar_Inicio_PushButton">
+             <property name="text">
+              <string>Agregar al Inicio</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QSpinBox" name="Peso_SpinBox"/>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="Destino_Label">
+             <property name="text">
+              <string>Destino</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="ID_Label">
+             <property name="text">
+              <string>ID</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QLineEdit" name="Destino_LineEdit"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPlainTextEdit" name="Salida_PlainTextEdit"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tabla</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="Tablita_TableWidget"/>
+        </item>
+       </layout>
+      </widget>
      </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="QPlainTextEdit" name="Salida_PlainTextEdit"/>
     </item>
    </layout>
   </widget>
@@ -119,7 +143,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>652</width>
      <height>21</height>
     </rect>
    </property>
@@ -133,21 +157,6 @@
    <addaction name="menuArchivo"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionGuardar">
-   <property name="text">
-    <string>Guardar</string>
-   </property>
-  </action>
-  <action name="actionGuardar_2">
-   <property name="text">
-    <string>Guardar</string>
-   </property>
-  </action>
-  <action name="actionAbrir">
-   <property name="text">
-    <string>Abrir</string>
-   </property>
-  </action>
   <action name="actionAbrir_2">
    <property name="text">
     <string>Abrir</string>
