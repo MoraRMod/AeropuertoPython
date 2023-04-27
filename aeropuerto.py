@@ -20,6 +20,26 @@ class Aeropuerto:
             str(v) + "\n" for v in self.__vuelos
         )
     
+    def __len__(self):
+        return(
+            len(self.__vuelos)
+        )
+    
+    def __iter__(self):
+        self.cont = 0
+
+        return self
+    
+    def __next__(self):
+        if self.cont < len(self.__vuelos):
+            avion = self.__vuelos[self.cont]
+
+            self.cont += 1
+
+            return avion
+        else:
+            raise StopIteration
+    
     def abrir(self, ubicacion):
         try:
             with open(ubicacion, 'r') as archivo:
