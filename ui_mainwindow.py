@@ -18,10 +18,10 @@ class Ui_MainWindow(object):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(652, 605)
-        self.actionAbrir_2 = QAction(MainWindow)
-        self.actionAbrir_2.setObjectName(u"actionAbrir_2")
-        self.actionGuardar_3 = QAction(MainWindow)
-        self.actionGuardar_3.setObjectName(u"actionGuardar_3")
+        self.actionAbrir = QAction(MainWindow)
+        self.actionAbrir.setObjectName(u"actionAbrir")
+        self.actionGuardar = QAction(MainWindow)
+        self.actionGuardar.setObjectName(u"actionGuardar")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.gridLayout_2 = QGridLayout(self.centralwidget)
@@ -147,8 +147,8 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.menubar.addAction(self.menuArchivo.menuAction())
-        self.menuArchivo.addAction(self.actionAbrir_2)
-        self.menuArchivo.addAction(self.actionGuardar_3)
+        self.menuArchivo.addAction(self.actionAbrir)
+        self.menuArchivo.addAction(self.actionGuardar)
 
         self.retranslateUi(MainWindow)
 
@@ -161,13 +161,13 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.actionAbrir_2.setText(QCoreApplication.translate("MainWindow", u"Abrir", None))
+        self.actionAbrir.setText(QCoreApplication.translate("MainWindow", u"Abrir", None))
 #if QT_CONFIG(shortcut)
-        self.actionAbrir_2.setShortcut(QCoreApplication.translate("MainWindow", u"Ctrl+O", None))
+        self.actionAbrir.setShortcut(QCoreApplication.translate("MainWindow", u"Ctrl+O", None))
 #endif // QT_CONFIG(shortcut)
-        self.actionGuardar_3.setText(QCoreApplication.translate("MainWindow", u"Guardar", None))
+        self.actionGuardar.setText(QCoreApplication.translate("MainWindow", u"Guardar", None))
 #if QT_CONFIG(shortcut)
-        self.actionGuardar_3.setShortcut(QCoreApplication.translate("MainWindow", u"Ctrl+S", None))
+        self.actionGuardar.setShortcut(QCoreApplication.translate("MainWindow", u"Ctrl+S", None))
 #endif // QT_CONFIG(shortcut)
         self.groupBox.setTitle(QCoreApplication.translate("MainWindow", u"Vuelo", None))
         self.Origen_Label.setText(QCoreApplication.translate("MainWindow", u"Origen", None))
