@@ -111,10 +111,25 @@ class Ui_MainWindow(object):
         self.tab_2.setObjectName(u"tab_2")
         self.gridLayout_4 = QGridLayout(self.tab_2)
         self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.Buscar_LineEdit = QLineEdit(self.tab_2)
+        self.Buscar_LineEdit.setObjectName(u"Buscar_LineEdit")
+
+        self.gridLayout_4.addWidget(self.Buscar_LineEdit, 1, 0, 1, 1)
+
+        self.MostrarTabla_PushButton = QPushButton(self.tab_2)
+        self.MostrarTabla_PushButton.setObjectName(u"MostrarTabla_PushButton")
+
+        self.gridLayout_4.addWidget(self.MostrarTabla_PushButton, 1, 2, 1, 1)
+
+        self.Buscar_PushButton = QPushButton(self.tab_2)
+        self.Buscar_PushButton.setObjectName(u"Buscar_PushButton")
+
+        self.gridLayout_4.addWidget(self.Buscar_PushButton, 1, 1, 1, 1)
+
         self.Tablita_TableWidget = QTableWidget(self.tab_2)
         self.Tablita_TableWidget.setObjectName(u"Tablita_TableWidget")
 
-        self.gridLayout_4.addWidget(self.Tablita_TableWidget, 0, 0, 1, 1)
+        self.gridLayout_4.addWidget(self.Tablita_TableWidget, 0, 0, 1, 3)
 
         self.tabWidget.addTab(self.tab_2, "")
 
@@ -163,6 +178,9 @@ class Ui_MainWindow(object):
         self.Destino_Label.setText(QCoreApplication.translate("MainWindow", u"Destino", None))
         self.ID_Label.setText(QCoreApplication.translate("MainWindow", u"ID", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"Agregar", None))
+        self.Buscar_LineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Identificador de Vuelo", None))
+        self.MostrarTabla_PushButton.setText(QCoreApplication.translate("MainWindow", u"Mostrar", None))
+        self.Buscar_PushButton.setText(QCoreApplication.translate("MainWindow", u"Buscar", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"Tabla", None))
         self.menuArchivo.setTitle(QCoreApplication.translate("MainWindow", u"Archivo", None))
     # retranslateUi
